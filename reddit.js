@@ -177,7 +177,7 @@ $(function () {
                 // This is the link from imgur 
                 console.log(result.data.link);
                 // go back to our window - replace this with the other url 
-                window.location = 'http://127.0.0.1:56321/index.html';   
+                window.location = 'https://morrisombiro.github.io/MashUp/';   
             } 
           });
         }
