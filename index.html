@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- https://www.w3schools.com/bootstrap/bootstrap_get_started.asp -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>MSYM.io</title>
+        <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div id = "header" class="top">
+            <div id="form_div" class="main_input">
+                <form id="sub_form">
+                    <label id="web_name">MrStealYourMeme</label>
+                    <label>r/</label>
+                    <input id="sub_reddit" type="text" placeholder="input subreddit">
+                    </form>   
+            </div>
+        </div>
+        <div id="grid_layout">
+            <div id = "img_api">
+                <form id="meme_num_form">
+                    <input id="meme_num" type="number" placeholder="meme number">
+                </form>
+                <blockquote class="imgur-embed-pub" lang="en" data-id="KUteCdn"><a href="//imgur.com/KUteCdn">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+                <a id = "post_" class="post" href="https://api.imgur.com/oauth2/authorize?response_type=token&client_id=9d3b5042b05984f">Post image to imgur</a>
+                <div class="hidden">
+                    <p>Posting to imgur...</p>
+                </div>
+            </div>
+            <div id="hot_memes"></div>
+            <div id="node_your_meme">
+	      <p>Meme Research Pannel</p>
+	      <div id="meme_searchbar">
+		<input name="memeSearch" id="meme_search" value="" type="text" placeholder="meme"/>
+		<div id="meme_suggestions"></div>
+	      </div>
+	      <div id="meme_results"></div>
+	    </div>
+        </div>
+        <div id="err_text">Most likely not a legit subreddit, also Don't include r/</div>
+        <div id="no_imgs">No image memes :/</div>        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="knowyourmeme.js" defer></script>
+        <script type="text/javascript" src="reddit.js" defer></script>
+        <script type="text/javascript" src="imgur.js" defer></script>
+    </body>
+</html>

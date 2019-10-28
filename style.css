@@ -1,0 +1,287 @@
+body {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	background: #f4f4f4;
+	font-weight: 300;
+	font-size: 20px;
+    color: dodgerblue;
+}
+
+#header {
+    top: 0;
+    overflow: hidden;
+    position: fixed;
+    max-width: 1264px;
+    width: 100%;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+#header . h1{
+    width: 100%;
+    position: fixed;
+    clear: both;
+}
+
+.main_input {
+    background-color: #333;   
+    width: 100%;
+    text-align: center;
+    padding: auto; 
+    padding-top: 10px;
+    position: fixed;
+    height: 50px;
+}
+
+
+
+#meme_num_form {
+    float: left;
+    padding-left: 10px;
+}
+
+#meme_num {
+    display: inline-block;
+    border-radius: 10px;
+    border-color: firebrick;
+}
+#meme_num::-webkit-input-placeholder {
+    text-align: center;
+}
+.main_input #web_name {
+    float: left;
+    padding: auto;
+    padding-left: 20px;
+}
+
+#grid_layout {
+    margin-top: 60px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+} 
+
+#img_api {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    height: 100%; 
+    text-align: center;
+}
+
+#hot_memes {
+    width: 100%;
+    float: none;
+    margin: auto;
+    text-align: center;
+    height: 1400px; 
+    overflow-y: auto;
+}
+
+#node_your_meme {
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: left;
+    border-left: 2px solid #303030
+}
+
+#meme_searchbar {
+    width: 50%;
+}
+
+#meme_searchbar input {
+    width: 100%
+}
+
+#meme_suggestions {
+    border: 2px solid black;
+}
+
+#meme_suggestions>div {
+    text-align: left;
+}
+
+#meme_suggestions>div:hover {
+    background: lightyellow;
+}
+
+#meme_suggestions img {
+    width: 36px;
+    height: 36px;
+    margin: 4px;
+}
+
+#meme_results img {
+    border-radius: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 100%;
+    display: block;
+}
+
+
+#err_text {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #FD4017;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 50px;
+  font-size: 17px;
+}
+
+#err_text.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {top: 0; opacity: 0;} 
+  to {top: 50px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 50px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {top: 50px; opacity: 1;} 
+  to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {top: 50px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+
+#no_imgs {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #FD4017;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 50px;
+  font-size: 17px;
+}
+
+#no_imgs.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {top: 0; opacity: 0;} 
+  to {top: 50px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 50px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {top: 50px; opacity: 1;} 
+  to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {top: 50px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+
+#sub_reddit {
+    border-radius: 7px;
+    height: 30px;
+    margin-left: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.post {
+    display: none;
+}
+#inv_num {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #FD4017;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 50px;
+  font-size: 17px;
+}
+
+#inv_num.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {top: 0; opacity: 0;} 
+  to {top: 50px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 50px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {top: 50px; opacity: 1;} 
+  to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {top: 50px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+
+#sub_reddit {
+    border-radius: 7px;
+    height: 30px;
+    margin-left: auto;
+}
+
+#sub_reddit::-webkit-input-placeholder {
+    color: #FF5700;
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+}
+
+.img_class {
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+.desc_class {
+    border-radius: 7px;
+    width: inherit;
+    padding: 10px;
+    color: aliceblue;
+    font-size: 15px;
+}
