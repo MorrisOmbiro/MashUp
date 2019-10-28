@@ -1,6 +1,6 @@
 var most_resent_search = Date.now();
 
-const base_url = "http://18.224.153.55/";
+const base_url = "https://18.224.153.55/";
 
 var search_suggestions = [];
 
