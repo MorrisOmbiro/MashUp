@@ -6,6 +6,6 @@ HOW TO USE:
 5) Go to https://morrisombir9.imgur.com to see added image
 
 APIs used:
-Imgur
-Reddit 
-KnowYourMeme (doesn't have one) - Built from scratch 
+- Imgur
+- Reddit 
+- KnowYourMeme (doesn't have one) - Built from scratch 
