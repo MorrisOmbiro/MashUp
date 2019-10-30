@@ -1,6 +1,6 @@
 var most_resent_search = Date.now();
 
-const base_url = "https://18.224.153.55/";
+const base_url = "https://wingx038.crabdance.com/";
 
 var search_suggestions = [];
 
