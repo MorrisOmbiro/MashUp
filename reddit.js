@@ -82,8 +82,7 @@ const show_hot = all_img_posts => {
         all_img_posts.forEach(({data: {url, score, title}}) => {
             const image = document.createElement('img');
             image.setAttribute("src", `${url}`);
-            image.setAttribute("width", "512");
-            image.setAttribute("height", "512");
+            image.setAttribute("width", "100%");
             image.setAttribute("padding", "30px");
             image.className = "img_class";
             const desc = document.createElement('p');
